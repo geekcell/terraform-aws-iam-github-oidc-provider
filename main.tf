@@ -1,9 +1,13 @@
 /**
- * # Terraform AWS Security Group Module
+ * # Terraform AWS IAM GitHub OIDC Provider
  *
- * Terraform module which creates a Security Group and rules ingress or egress
- * rules that belong to it. The focus on this module lies within it's simplicity
- * by providing default values that should make sense for most use cases.
- *
- * It also makes use of the latest Terraform
+ * Simple module that creates an IAM OpenID Connect (OIDC) provider with the correct settings
+ * for GitHub to allow for role assumption via web tokens. See: https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services
  */
+resource "aws_iam_openid_connect_provider" "main" {
+  url             = var.provider_url
+  client_id_list  = var.client_ids
+  thumbprint_list = var.thumbprints
+
+  tags = var.tags
+}
