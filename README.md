@@ -1,5 +1,5 @@
 <!-- BEGIN_TF_DOCS -->
-[![Geek Cell GmbH](https://raw.githubusercontent.com/geekcell/template-terraform-module/main/docs/assets/logo.svg)](https://www.geekcell.io/)
+[![Geek Cell GmbH](https://raw.githubusercontent.com/geekcell/.github/main/geekcell-github-banner.png)](https://www.geekcell.io/)
 
 ### Code Quality
 [![License](https://img.shields.io/github/license/geekcell/terraform-aws-iam-github-oidc-provider)](https://github.com/geekcell/terraform-aws-iam-github-oidc-provider/blob/master/LICENSE)
@@ -60,7 +60,7 @@ https://docs.github.com/en/actions/deployment/security-hardening-your-deployment
 | <a name="input_client_ids"></a> [client\_ids](#input\_client\_ids) | The client IDs of the GitHub apps. | `list(string)` | <pre>[<br>  "sts.amazonaws.com"<br>]</pre> | no |
 | <a name="input_provider_url"></a> [provider\_url](#input\_provider\_url) | The URL of the GitHub provider. | `string` | `"https://token.actions.githubusercontent.com"` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to add to the AWS Customer Managed Key. | `map(any)` | `{}` | no |
-| <a name="input_thumbprints"></a> [thumbprints](#input\_thumbprints) | The thumbprints of the GitHub provider. | `list(string)` | <pre>[<br>  "6938fd4d98bab03faadb97b34396831e3780aea1"<br>]</pre> | no |
+| <a name="input_thumbprints"></a> [thumbprints](#input\_thumbprints) | The thumbprints of the GitHub provider. | `list(string)` | <pre>[<br>  "6938fd4d98bab03faadb97b34396831e3780aea1",<br>  "1c58a3a8518e8759bf075b76b750d4f2df264fcd"<br>]</pre> | no |
 
 ## Outputs
 
